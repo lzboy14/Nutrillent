@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+
+    <script type = "text/javascript" src="newStuff.js"></script>  
+
+	</head>
+    
+	<body>
+    <img src="logo.png" height=100px width=100px class="transbox">
+    
+    <ul class="nav">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="Tracker.html">Tracker</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <br>
+    
+    <center><h1>Nutrition Goals</h1></center>
+    
+  <form id="form"> 
+  <center><input type="search" id="query" name="q" placeholder="Add food item..." style= "width: 300px;">
+    <input type="search" id="amount" name="q" placeholder="Add amount of food eaten (in grams)..." style= "width: 300px;">
+    <br></br>
+    <button type="button" onclick="getVal()">Calculate</button>
+    <button type="button" onclick="onClick()">See my results</button></center>
+  </form>
+    
+  <script src="script.js"></script>
+
+	</body>
+</html>
