@@ -8,7 +8,8 @@ Dora C.
 
 After the hackathon ended, I finished programming the web app on my own and renamed it to "Nutrillent".
 
-Nutritional information retrieved from the US Department of Agriculture (USDA) FoodData Central API.
+Nutritional information was retrieved from the US Department of Agriculture (USDA) FoodData Central API.
+
 Deficiency data and daily nutritional intake recommendations were based on US Food and Drug Administration's (FDA) Reference Daily Intakes (RDIs).
 https://www.fda.gov/media/99069/download
 
