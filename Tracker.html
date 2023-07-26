@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tracker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/http-request-mock/1.6.6/http-request-mock.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/isomorphic-fetch/3.0.0/fetch-npm-browserify.min.js"></script>
+<script src="script.js"></script>
+    <img src="logo.png" height=100px width=100px class="transbox">
+    
+    <ul class="nav">
+      <li><a href="Tracker.html">Tracker</a></li>  
+      <li><a href="Database.html">Database</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <br>
+    
+    <center><h1>Nutrillent Tracker</h1></center>
+
+    <div><h2>*The following information will be used for the Nutrillent Tracker: </h2>***Please select one nutrient at a time.</div>
+
+    <div class="question">
+      <form>
+        <label for="minerals"><font size="+3">Select a vitamin or mineral:<font></label>
+          <input type="radio" name="mineral" value="Calcium"><font size="+2">Calcium</font></input>
+          <input type="radio" name="mineral" value="Iron"><font size="+2">Iron</font></input>
+          <input type="radio" name="mineral" value="Magnesium"><font size="+2">Magnesium</font></input>
+          <input type="radio" name="mineral" value="Potassium"><font size="+2">Potassium</font></input>
+          <input type="radio" name="mineral" value="Zinc"><font size="+2">Zinc</font></input>
+          <input type="radio" name="mineral" value="Vitamin A"><font size="+2">Vitamin A</font></input>
+          <input type="radio" name="mineral" value="Vitamin C"><font size="+2">Vitamin C</font></input>
+          <input type="radio" name="mineral" value="Vitamin D"><font size="+2">Vitamin D</font></input>
+          <input type="radio" name="mineral" value="Vitamin E"><font size="+2">Vitamin E</font></input>
+          <input type="radio" name="mineral" value="Vitamin B12"><font size="+2">Vitamin B12</font></input>
+      </form><br>
+    </div>
+
+    <div class="question">
+      <form>
+      <label for="amount">Deficiency Level:</label>
+      <input type="radio" name="defLevel" value="Mild"><font size="+2">None</font></input>
+          <input type="radio" name="defLevel" value="Moderate"><font size="+2">Mild</font></input>
+          <input type="radio" name="defLevel" value="Severe"><font size="+2">Moderate</font></input>
+      </form>
+    </div>
+    <div><h2>
+      <input type="search" id="blue" name="q" placeholder="Add food item..." style= "width: 300px;">
+      <input type="search" id="red" name="q" placeholder="Add amount eaten (grams)..." style= "width: 300px;">
+      <button type="button" onclick="getValTracker()">Submit</button></h2></div>
+      <p id="demo1" style="font-size: large;"></p>
+      <p id="demo2" style="font-size: large;"></p>
+    
+	</body>
+
+  
+</html>

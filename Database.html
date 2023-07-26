@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+
+    <script type = "text/javascript" src="newStuff.js"></script>  
+
+	</head>
+    
+	<body>
+    <img src="logo.png" height=100px width=100px class="transbox">
+    
+    <ul class="nav">
+      <li><a href="Tracker.html">Tracker</a></li>
+      <li><a href="Database.html">Database</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <br>
+    
+    <center><h1>USDA Info Database</h1></center>
+    <p class="paragraph2">
+      Nutrient Options: Calcium, Iron, Magnesium, Potassium, Zinc, Vitamin A, Vitamin B12, Vitamin C, Vitamin D, Vitamin E <br><br>
+    </p>
+    
+  <form id="form"> 
+  <center><input type="search" id="blue" name="q" placeholder="Enter food item..." style= "width: 300px;">
+    <br>
+    <br>
+    <input type="search" id="red" name="q" placeholder="Enter amount (grams)..." style= "width: 300px;">
+    <br>
+    <br>
+    <input type="search" id="yellow" name="q" placeholder="Enter nutrient..." style= "width: 300px;">
+    <br>
+    <br>
+    <button type="button" onclick="getValDatabase()">Calculate</button></center>
+  </form>
+    
+  <script src="script.js"></script>
+  <center><p id="demo"><h5></h5></p></center>
+
+	</body>
+</html>
