@@ -1,5 +1,5 @@
 # Nutrillent
-Originally named "GLED Nutrient Tracker" and created as a prototype for the online hackathon "Hack the Pulse 2022".
+Originally named "GLED Nutrient Tracker" and created as a prototype for the online virtual hackathon "Hack the Pulse 2022".
 https://devpost.com/software/hackthepulse
 Collaborators:
 Grace G.
