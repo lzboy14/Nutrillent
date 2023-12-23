@@ -10,7 +10,7 @@ function getValTracker() {
     var amountOfFood = document.getElementById("red").value;
     
     const params = {
-      api_key: 'KN2QOGHkM2Sv0PXtP1FPCApL3Nlvpp5ViPAciZSa',
+      api_key: '6MQ4LW4IKJM0u9xCgJzqOpOjWCbBah1NoPxdWvd0',
       dataType: "Survey (FNDDS)",
       pageSize: '2',
       query: foodInput
@@ -260,12 +260,46 @@ function getValDatabase() {
                 }
                 vitamin += 1;
                 }
+              } else if (nutrient.toUpperCase() == "POTASSIUM") {
+                for (var value2 = 0; value2 < numOfNutrients; value2 ++) {
+                if (obj.foods[0].foodNutrients[vitamin].nutrientName === "Potassium, K") {
+                    flag = true;
+                    nutrientIndex = vitamin;
+                    amountOfNutrient += obj.foods[0].foodNutrients[nutrientIndex].value;
+                }
+                vitamin += 1;
+                } 
+              } else if (nutrient.toUpperCase() == "VITAMIN C") {
+                for (var value2 = 0; value2 < numOfNutrients; value2 ++) {
+                if (obj.foods[0].foodNutrients[vitamin].nutrientName === "Vitamin C, total ascorbic acid") {
+                    flag = true;
+                    nutrientIndex = vitamin;
+                    amountOfNutrient += obj.foods[0].foodNutrients[nutrientIndex].value;
+                }
+                vitamin += 1;
+                }
+              } else if (nutrient.toUpperCase() == "VITAMIN E") {
+                for (var value2 = 0; value2 < numOfNutrients; value2 ++) {
+                if (obj.foods[0].foodNutrients[vitamin].nutrientName === "Vitamin E (alpha-tocopherol)") {
+                    flag = true;
+                    nutrientIndex = vitamin;
+                    amountOfNutrient += obj.foods[0].foodNutrients[nutrientIndex].value;
+                }
+                vitamin += 1;
+                }
+              }
+              if (nutrient.toUpperCase() == "POTASSIUM" || nutrient.toUpperCase() == "ZINC" || nutrient.toUpperCase() == "IRON" || nutrient.toUpperCase() == "MAGNESIUM" || nutrient.toUpperCase() == "CALCIUM" || nutrient.toUpperCase() == "VITAMIN E" || nutrient.toUpperCase() == "VITAMIN C") {
+                var suffix = "mg"
+              } else if (nutrient.toUpperCase() == "VITAMIN B12" || nutrient.toUpperCase() == "VITAMIN D") {
+                var suffix = "mcg"
+              } else if (nutrient.toUpperCase() == "VITAMIN A") {
+                var suffix = "mcg RAE"
               }
               //Final calculations.
               trueVal = amountOfNutrient * amountOfFood / 100;
               roundedVal = Math.round(trueVal * 100) / 100;
               totalSum += roundedVal;
-              document.getElementById("demo").innerHTML = "There are " + totalSum + "mg of " + nutrient + " in " + amountOfFood + " grams of " + foodInput + ". ";
+              document.getElementById("demo").innerHTML = "There are " + totalSum + " " + suffix + " of " + nutrient + " in " + amountOfFood + " grams of " + foodInput + ". ";
 
       })
     }
