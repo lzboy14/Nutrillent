@@ -13,4 +13,7 @@ Nutritional information was retrieved from the US Department of Agriculture (USD
 Deficiency data and daily nutritional intake recommendations were based on US Food and Drug Administration's (FDA) Reference Daily Intakes (RDIs).
 https://www.fda.gov/media/99069/download
 
-Feel free to email me at l254zhan@uwaterloo.ca for a demo!
+Deployed using Microsoft Azure:
+
+https://nutrillentweb.z9.web.core.windows.net/About.html
+
