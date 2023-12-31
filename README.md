@@ -13,7 +13,7 @@ Nutritional information was retrieved from the US Department of Agriculture (USD
 Deficiency data and daily nutritional intake recommendations were based on US Food and Drug Administration's (FDA) Reference Daily Intakes (RDIs).
 https://www.fda.gov/media/99069/download
 
-Deployed using Microsoft Azure:
+Deployed using Microsoft Azure with a CI/CD pipeline.
 
 https://zealous-coast-053a22410.4.azurestaticapps.net/
 
