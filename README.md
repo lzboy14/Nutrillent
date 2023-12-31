@@ -15,5 +15,5 @@ https://www.fda.gov/media/99069/download
 
 Deployed using Microsoft Azure:
 
-https://nutrillentweb.z9.web.core.windows.net/About.html
+https://zealous-coast-053a22410.4.azurestaticapps.net/
 
